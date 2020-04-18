@@ -29,7 +29,6 @@ p, li {
 }
 body{
   background-color: white;
-  margin: 5px;
 }
 header {
   text-align:center;
@@ -74,7 +73,6 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #404040;
-  border-radius: 7px; /* slightly rounded edges */
 }
 /* this keeps the links of the navigation bar to the left, rather than the default stacked */
 .navbarlist { 
