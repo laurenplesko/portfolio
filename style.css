@@ -1,0 +1,138 @@
+/* Base CSS for overall website */
+h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #33cccc;
+}
+h2 {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #33cccc
+}
+h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #33cccc;
+}
+h4 { 
+  font-size: 15px;
+  font-family: sans-serif;
+  color:#adebeb;
+}
+p, li {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #404040;
+  letter-spacing: 1px;
+}
+body{
+  background-color: white;
+  margin: 5px;
+}
+header {
+  text-align:center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+a {
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  color: #33cccc 
+}
+.centered{
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 7px;
+}
+.imgFit {
+  max-width: 100%;
+  height: auto;
+  /* object-fit: contain; */
+  object-position: 50% 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+/* END of base CSS */
+
+/* NAVBAR container and contents */
+
+.navbar { 
+  /* the beginning of the navigation bar, present on all pages of the site */
+  /* base format derived from w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black */
+  list-style-type: none;
+  margin-bottom: 5px;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #404040;
+  border-radius: 7px; /* slightly rounded edges */
+}
+/* this keeps the links of the navigation bar to the left, rather than the default stacked */
+.navbarlist { 
+  float: left;
+}
+.navbarlist a {
+  display: block;
+  color: white;
+  padding: 10px 20px 10px 20px; 
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-radius: 7px;
+}
+/* navbar style on hover */
+.navbarlist a:hover {
+  background-color: white;
+  color: #33cccc;
+  border-radius: 7px;
+}
+
+/* END of navbar */
+
+.finalsolution {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin: 5px;
+  background-color: #404040;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+  font-size: 10px;
+  color: whitesmoke;
+  background-color: #404040;
+  border-radius: 7px;
+}
+p.information {
+  text-align: left;
+  padding: 5px;
+  font-family: sans-serif;
+  font-size: 10px;
+  color: whitesmoke;
+}
+.column { /* Columns inspired by https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_column-rule */
+  float: center;
+  width: 100%;
+  margin: 1%;
+  border-radius: 5px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* END of footer */
+
+/* END of CSS */
