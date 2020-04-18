@@ -122,16 +122,11 @@ p.information {
   font-size: 10px;
   color: whitesmoke;
 }
-.column { /* Columns inspired by https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_column-rule */
+.container {
   float: center;
   width: 100%;
   margin: 1%;
   border-radius: 5px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* END of footer */
 
