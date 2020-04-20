@@ -14,20 +14,208 @@
 </header>
 
 <!-- NAVIGATION SECTION -->
-<nav> <!-- inspired by the navigation list at https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float -->
-  <div class="navbar">
-      <div class="navbarlist"><a href="index.html">ABOUT</a></div>
-      <div class="navbarlist"><a href="Education.html">EDUCATION</a></div>
-      <div class="navbarlist"><a href="Experience.html">EXPERIENCE</a></div>
-      <div class="navbarlist"><a href="Portfolio.html">PORTFOLIO</a></div>
+<nav> <!-- Navigation inspiration: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+  <div class="navbar" id="mynavbar">
+      <a href="#about">ABOUT</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#projects">PROJECTS</a>
   </div>
 </nav>
 
 
 <!-- MAIN SECTION WITH BODY OF TEXT -->
-<h2>About</h2>
-<p>About text.</p>
+<div class="aboutbackground">
+  <div id="about">
+    <h2>About</h2>
+    <p>Dedicated and enthusiastic young professional eager to begin my career in the field of GIS.  Highly skilled in communication, conflict resolution, team leadership, and ArcGIS products.  As a soon-to-be graduate from the Fleming College GIS (Applications Specialist) program, I am looking to leverage my knowledge and experience into a full-time role focused on using GIS.</p>
+  </div>
+</div>
 
+<div class="educationbackground">
+  <div id="education">
+    <h2>Education</h2>
+    <div class="educationitem">
+      <h3>Post Graduate Certificate</h3>
+      <h4>Fleming College (September 2019 - June 2020)</h4>
+      <ul>
+        <li>Geographic Information Systems - Applications Specialist</li>
+        <li>Topics of focus include cartography, spatial analysis, web design, programming, remote sensing, database development, environmental modelling, and surveying/CAD mapping</li>
+      </ul>
+    </div>
+
+    <div class="educationitem">
+      <h3>Bachelor of Arts (Honours)</h3>
+      <h4>University of Toronto (2014 - 2018)</h4>
+      <ul>
+        <li>Major in Environmental Geography, Minor in Geographic Information Systems, Minor in Sociology</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="experiencebackground">
+  <div id="experience">
+    <h2>Experience</h2>
+    <div class="experienceitem">
+      <h3>Student Collaborative Project</h3>
+      <h4>Fleming College, in partnership with Feed Ontario (March 2020 - June 2020)</h4>
+      <ul>
+        <li>Collaboration with Fleming College and Feed Ontario to develop a web mapping application to communicate food bank usage over time across Ontario</li>
+        <li>Involves data acquisition and preprocessing, spatial and statistical analysis, visualization/presentation in the form of cartographic outputs embedded in a webpage, and enterprise/web technology</li>
+      </ul>
+    </div>
+
+    <div class="experienceitem">
+      <h3>Receptionist (Wellesley Place)</h3>
+      <h4>City of Toronto - Employment and Social Services (May 2019 - August 2019)</h4>
+      <ul>
+        <li>Collaborated with a dedicated team of Receptionists, Administrative Staff, Caseworkers, Supervisors, and Security Guards to provide a safe and welcoming environment for some of Toronto’s most marginalized populations</li>
+        <li>Utilized computerized applications such as Electronic Payment Application (EPA), Electronic Transit Application (ETA), and Fair Pass Application (FPA) to issue benefits to clients in the form of cheques, drug benefit cards, RBC reloadable payment cards, bus tokens, and Presto cards</li>
+        <li>Maintained manual and computerized filing and retrieval systems for records/documents</li>
+      </ul>
+    </div>
+
+    <div class="experienceitem">
+      <h3>Facility In-Charge, Youth Program Leader, Specialty Instructor, Camp Counsellor</h3>
+      <h4>City of Toronto - Parks, Forestry & Recreation (March 2012 - May 2019)</h4>
+      <ul>
+        <li>Planned and led instructional and drop-in programs for children aged 18 months to 14 years, for groups of up to 60 children</li>
+        <li>Ensured programs were flexible and allowed for effective integration of all participants regardless of skill level or ability, adapting constantly to suit the diverse needs of all participants</li>
+        <li>Promptly dealt with incidents and problems involving participants, families, and the general public</li>
+        <li>Collaborated with staff, participants, and parents/caregivers to ensure the success of the programs</li>
+      </ul>
+    </div>
+  
+    <div class="experienceitem">
+      <h3>Summer Camp Location Coordinator</h3>
+      <h4>City of Toronto - Parks, Forestry & Recreation (May 2017 - September 2018)</h4>
+      <ul>
+        <li>Assisted with the planning and implementation of camp-wide activities events for groups of approximately 60 children</li>
+        <li>Provided ongoing direction and feedback to camp staff to support skill and professional development</li>
+        <li>Supported recruitment, hiring and training of staff and volunteers</li>
+        <li>Provided exceptional customer service to program participants and the public, both on- and off-site</li>
+        <li>Maintained accurate records of program participants’ personal information and program attendance</li>
+      </ul>
+    </div>
+
+    <div class="experienceitem">
+      <h3>Programming Intern (Urban Agriculture)</h3>
+      <h4>Evergreen Brick Works (September 2017 - April 2018)</h4>
+      <ul>
+        <li>Provided support to develop Evergreen’s urban agriculture programming, as well as for the ongoing execution of the Don River Valley Park and Learning Grounds programs</li>
+        <li>Supported the delivery of urban agriculture grant asks</li>
+        <li>Reviewed case studies of successful urban agriculture practices on both the national and international levels, and identified areas for programming development within the organization</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="projectsbackground">
+  <div id="projects">
+    <h2>Projects</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
+      eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
+      ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</p>
+    
+      <!-- Responsive gallery inspiration: https://www.w3schools.com/css/css_image_gallery.asp -->
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_SAIITF4.jpg">
+          <img src="images/LPlesko_SAIITF4.jpg" alt="Spatial statistics" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>    
+
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_SAIITF3.jpg">
+          <img src="images/LPlesko_SAIITF3.jpg" alt="Least cost path analysis" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_SAII_MCDA.jpg">
+          <img src="images/LPlesko_SAII_MCDA.jpg" alt="Multicriteria data analysis" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_GVTF4.jpg">
+          <img src="images/LPlesko_GVTF4.jpg" alt="Generalized topographic map" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_GEOM75_A1.jpg">
+          <img src="images/LPlesko_GEOM75_A1.jpg" alt="True colour composite overlaying shaded relief" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_Surv_A2.jpg">
+          <img src="images/LPlesko_Surv_A2.jpg" alt="Survey in Kawartha Lakes, ON" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_GVFP.jpg">
+          <img src="images/LPlesko_GVFP.jpg" alt="Thematic map of Toronto" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_GEOM75_P5.jpg">
+          <img src="images/LPlesko_GEOM75_P5.jpg" alt="Multispectral landcover classification" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_GVTF1_ArcGIS.jpg">
+          <img src="images/LPlesko_GVTF1_ArcGIS.jpg" alt="Basic reference map" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+  
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="images/LPlesko_GVTF1_AI.jpg">
+          <img src="images/LPlesko_GVTF1_AI.jpg" alt="Basic reference map" width="600" height="400">
+        </a>
+        <p class="desc">Click image to view</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- Scroll button inspiration: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+<button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+<script src="script.js"></script>
 
 <!-- FOOTER -->
 <footer>
