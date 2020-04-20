@@ -46,20 +46,20 @@ a {
   font-weight: normal;
   color: #4d6a2f; 
 }
-#about, #education, #experience, #projects {
+#about, #education, #keyskills, #experience, #projects {
   max-width: 1000px;
   margin: auto;
   padding-left: 50px;
   padding-right: 50px;
 }
-.aboutbackground, .educationbackground, .experiencebackground, .projectsbackground {
+.aboutbackground, .educationbackground, .keyskillsbackground, .experiencebackground, .projectsbackground {
   padding: 20px;
   border-top: 1px solid #404040;
 }
-.aboutbackground, .experiencebackground {
+.educationbackground, .experiencebackground {
   background-color: #d9d9d9;
 }
-.educationitem, .experienceitem {
+.educationitem, .keyskillsitem, .experienceitem {
   padding: 20px;
   margin-bottom: 20px;
   border: 1px solid #404040;
