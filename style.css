@@ -49,8 +49,8 @@ a {
 #about, #education, #keyskills, #experience, #projects {
   max-width: 1000px;
   margin: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .aboutbackground, .educationbackground, .keyskillsbackground, .experiencebackground, .projectsbackground {
   padding: 20px;
