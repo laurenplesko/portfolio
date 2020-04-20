@@ -1,130 +1,177 @@
 /* Base CSS for overall website */
 h1 {
-  font-size: 40px;
-  font-family: sans-serif;
-  text-align: center;
-  color: #33cccc;
+  font-size: 50px;
+  font-weight: 400;
 }
 h2 {
   font-size: 30px;
-  font-family: sans-serif;
-  color: #33cccc
+  font-weight: 350;
 }
 h3 {
   font-size: 20px;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #33cccc;
+  font-weight: 350;
+  text-align: left;
+  color: #4d6a2f;
+  margin-bottom: 5px;
 }
 h4 { 
   font-size: 15px;
-  font-family: sans-serif;
-  color:#adebeb;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 5px;
 }
-p, li {
+h1, h2 {
+  text-align: center;
+  color: #4d6a2f;
+}
+p, h4, li {
   font-size: 15px;
-  font-family: sans-serif;
   color: #404040;
   letter-spacing: 1px;
 }
 body{
-  background-color: white;
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: Calibri, sans-serif;
 }
 header {
-  text-align:center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  padding: 40px;
+  text-align: center;
+  background-image: url('images/header_pattern.jpg');
+  /* image source: https://www.123rf.com/photo_69000301_stock-vector-white-neutral-seamless-pattern-for-modern-design-in-flat-style-tileable-geometric-vector-background-.html */
 }
 a {
   text-align: left;
   font-size: 14px;
   font-weight: normal;
-  color: #33cccc 
+  color: #4d6a2f; 
 }
-.centered{
-  text-align: center;
-  background-color: rgb(235, 235, 235);
-  padding: 10px;
-  margin: 5px;
-  border-radius: 7px;
+#about, #education, #experience, #projects {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-.imgFit {
-  max-width: 100%;
+.aboutbackground, .educationbackground, .experiencebackground, .projectsbackground {
+  padding: 20px;
+}
+.aboutbackground, .experiencebackground {
+  background-color: #d9d9d9;
+}
+.educationitem, .experienceitem {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #404040;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px grey;
+}
+.gallery {
+  border: 1px solid #909090;
+  box-shadow: 0 4px 8px grey;
+  margin: 10px;
+}
+.gallery:hover {
+  border: 1px solid #404040;
+  transition: 0.25s ease;
+}
+.gallery img:hover {
+  opacity:0.5;
+  transition: 0.25s ease;
+}
+.gallery img {
+  width: 100%;
   height: auto;
-  /* object-fit: contain; */
-  object-position: 50% 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px; 
-  padding-bottom: 10px;
+}
+p.desc {
+  font-size: 12px;
+  color: #404040;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 10px;
+  float: left;
+  width: 50%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* END of base CSS */
 
 /* NAVBAR container and contents */
-
 .navbar { 
-  /* the beginning of the navigation bar, present on all pages of the site */
   /* base format derived from w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black */
-  list-style-type: none;
-  margin-bottom: 5px;
   padding: 5px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #404040;
+  background-color: #595959;
 }
-/* this keeps the links of the navigation bar to the left, rather than the default stacked */
-.navbarlist { 
-  float: left;
-}
-.navbarlist a {
+.navbar a {
   display: block;
-  color: white;
+  color: whitesmoke;
   padding: 10px 20px 10px 20px; 
   text-align: center;
-  font-family: sans-serif;
+  font-size: 18px;
   text-decoration: none;
   border-radius: 7px;
 }
 /* navbar style on hover */
-.navbarlist a:hover {
-  background-color: white;
-  color: #33cccc;
-  border-radius: 7px;
+.navbar a:hover {
+  background-color: whitesmoke;
+  color: #595959;
+  transition: 0.25s ease;
 }
-
 /* END of navbar */
 
-.finalsolution {
-  padding: 6px 12px;
-  border: 1px solid #ccc;
+/* BACK TO TOP button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-style: none;
+  background-color: #4d6a2f;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 15px;
   border-radius: 7px;
-  margin: 5px;
-  background-color: #404040;
+  font-size: 14px;
+  box-shadow: 0 4px 8px grey;
 }
+/* END of back to top button */
 
 /* FOOTER */
 footer {
   margin-top: 20px;
-  padding: 10px 20px 10px 20px;
-  font-size: 10px;
+  padding: 20px;
   color: whitesmoke;
-  background-color: #404040;
-  border-radius: 7px;
+  background-color: #595959;
 }
 p.information {
-  text-align: left;
-  padding: 5px;
-  font-family: sans-serif;
-  font-size: 10px;
+  padding: 20px;
+  font-size: 12px;
   color: whitesmoke;
 }
 .container {
   float: center;
   width: 100%;
-  margin: 1%;
-  border-radius: 5px;
 }
 /* END of footer */
 
