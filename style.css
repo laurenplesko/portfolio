@@ -2,7 +2,7 @@
 body{
   background-color: #f2f2f2;
   margin: 0;
-  font-family: "Open Sans", Calibri, Arial, sans-serif;
+  font-family: Calibri, sans-serif;
 }
 h1 {
   font-size: 50px;
@@ -27,7 +27,6 @@ h4 {
   margin-top: 5px;
 }
 h1, h2 {
-  font-family: Merriweather, Georgia, serif;
   text-align: center;
   color: #4d6a2f;
 }
