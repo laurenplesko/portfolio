@@ -1,7 +1,13 @@
 /* Base CSS for overall website */
+body{
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: "Open Sans", Calibri, Arial, sans-serif;
+}
 h1 {
   font-size: 50px;
   font-weight: 400;
+  
 }
 h2 {
   font-size: 30px;
@@ -21,6 +27,7 @@ h4 {
   margin-top: 5px;
 }
 h1, h2 {
+  font-family: Merriweather, Georgia, serif;
   text-align: center;
   color: #4d6a2f;
 }
@@ -28,11 +35,6 @@ p, h4, li {
   font-size: 15px;
   color: #404040;
   letter-spacing: 1px;
-}
-body{
-  background-color: #f2f2f2;
-  margin: 0;
-  font-family: Calibri, sans-serif;
 }
 header {
   padding: 40px;
@@ -128,7 +130,7 @@ a {
   display: block;
   float: left;
   color: whitesmoke;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   text-align: center;
   font-size: 18px;
   text-decoration: none;
@@ -136,7 +138,7 @@ a {
 }
 /* navbar style on hover */
 .navbar a:hover {
-  background-color: whitesmoke;
+  background-color: #cccccc;
   color: #595959;
   transition: 0.25s ease;
 }
@@ -145,14 +147,18 @@ a {
   float: right;
 }
 @media screen and (max-width: 700px) {
-  .navbar a {display: none;}
+  .navbar a {
+	  display: none;
+  }
   .navbar a.icon {
     float: right;
     display: block;
   }
 }
 @media screen and (max-width: 700px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+	  position: relative;
+  }
   .navbar.responsive a.icon {
     position: absolute;
     right: 5px;
@@ -161,7 +167,7 @@ a {
   .navbar.responsive a {
     float: none;
     display: block;
-    text-align: center;
+    text-align: left;
   }
 }
 /* END of navbar */
@@ -180,6 +186,13 @@ a {
   border-radius: 7px;
   font-size: 14px;
   box-shadow: 0 4px 8px grey;
+}
+
+/* Back to top button style on hover */
+#myBtn:hover {
+  background-color: #cccccc;
+  color: #4d6a2f;
+  transition: 0.25s ease;
 }
 /* END of back to top button */
 
